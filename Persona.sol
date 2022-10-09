@@ -73,7 +73,7 @@ contract Persona {
         if (set <= promedio) {
             flag = 1;
             pushContract.notificate(
-                "0xFc8087fcbFa0eD96B220511650D0d73dC4593C44"
+                msg.sender
             );
         }
         if (set > promedio) flag = 0;
